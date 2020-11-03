@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>focus & blur</h1>
+    <button type="button" id="obtn">open window</button>
+    <button type="button" id="focbtn">focus</button>
+    <button type="button" id="blur">blur</button>
+    <button type="c" id="cls">close</button>
+
+<script>
+
+    var ne;
+    function ope()
+    {
+        ne=window.open("","_blank","width=300,height=200");
+    }
+    function foc()
+    {
+        ne.focus();
+    }
+
+    function bl()
+    {
+        ne.blur();
+    }
+    function cl()
+    {
+       window.close();
+    }
+document.getElementById("obtn").addEventListener('click',ope);
+document.getElementById("focbtn").addEventListener('click',foc);
+document.getElementById("blur").addEventListener('click',bl);
+document.getElementById("c").addEventListener('click',cl);
+
+</script>
+</body>
+</html>
